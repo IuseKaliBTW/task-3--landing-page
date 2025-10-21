@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+@font-face {
+    font-family: mainfont;
+    src: url(../fonts/UnifrakturCook-Bold.ttf) format('truetype');
+}
+@font-face {
+    font-family: texts;
+    src: url(../fonts/SuperShape-PV9qE.ttf) format('truetype');
+}
+.mainHero {
+    width: 100vw;
+    height: 100vh;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), /* dark overlay */
+        url(../images/illustration-japanese-city.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.mainHero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px); /* adjust blur value */
+    transform: scale(1); /* prevents edge clipping */
+    z-index: 0;
+}
+
+.mainHero * {
+    position: relative;
+    z-index: 1;
+}
+.mainHero{
+    position: relative;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    color: white;
+}
+.nav div a{
+    font-size: 20px;
+    padding: 10px;
+    font-family: "Outfit", sans-serif;
+}
+.nav p{
+    font-size: 40px;
+    font-family: "Zen Dots", sans-serif;
+}
+.heading .heroHeading{
+    font-size: 10vw;
+    color: white;
+    text-align: center;
+    font-family: "UnifrakturCook", cursive;
+    padding-top: 100px;
+}
+.mainHero > img{
+    position: absolute;
+}
+#image1{
+    width: 300px;
+    z-index: 99;
+    top: 40%;
+    left: 60%;
+}
+#image2{
+    width: 250px;
+    z-index: 99;
+    top: 60%;
+    left: 50%;
+}
+#image3{
+    width: 200px;
+    z-index: 99;
+    top: 48%;
+    left: 42%;
+}
+.heroDescription{
+    font-size: 20px;
+    color: white;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 32vw;
+    margin-left: 40px;
+    margin-top: 120px;
+    font-family: "Outfit", sans-serif;  
+}
+.heroDescription h3{
+    font-size: 30px;
+    font-family: "Outfit", sans-serif;  
+    font-weight: 600;
+}
+.footer{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+.footer p{
+    font-size: 30px;
+    font-family: "Edu NSW ACT Cursive", cursive;  
+    cursor: pointer;  
+}
+.footer div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.footer div p{
+    font-size: 30px;
+    font-family: "Outfit", sans-serif;
+    text-decoration: underline;
+}
+.footer div i{
+    font-size: 30px;
+}
+
+
